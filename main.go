@@ -1,15 +1,18 @@
 package main
 
 import (
-	"os"
-	"time"
 	"fmt"
-	"net/http"
 	"io"
 	"io/ioutil"
+	"net/http"
+	"os"
+	"time"
 )
 
 func main() {
+	a := "foo"
+	fmt.Println(a)
+
 	start := time.Now()
 	ch := make(chan string)
 	for _, url := range os.Args[1:] {
